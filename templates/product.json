@@ -6,12 +6,26 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text_style": "uppercase",
-            "text": "{{ product.vendor }}"
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
+        },
+        "d2b827e5-5edb-47f7-9f2d-9a08224b0d0e": {
+          "type": "shopify:\/\/apps\/product-reviews-test\/blocks\/average-rating\/9ef4f36d-cf91-4f04-ba71-af8262278f76",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 24,
+            "padding_x": 0,
+            "padding_y": 0,
+            "show_heading": false,
+            "heading": "Average Score",
+            "product": "{{product}}"
+          }
         },
         "subtitle": {
           "type": "text",
@@ -21,27 +35,43 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
-          "type": "variant_picker"
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
-          "type": "buy_buttons"
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         },
         "share": {
-          "type": "share"
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "d2b827e5-5edb-47f7-9f2d-9a08224b0d0e",
         "subtitle",
         "price",
         "variant_picker",
@@ -49,14 +79,68 @@
         "buy_buttons",
         "description",
         "share"
-      ]
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1631864868fe8e26b3": {
+      "type": "apps",
+      "blocks": {
+        "4e2b6120-7d09-4fd5-97b3-fdfd729c0c2f": {
+          "type": "shopify:\/\/apps\/product-reviews-test\/blocks\/product-reviews\/9ef4f36d-cf91-4f04-ba71-af8262278f76",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 24,
+            "padding_x": 50,
+            "padding_y": 0,
+            "heading": "Customer Reviews",
+            "no_reviews_action_text": "Be the first to review this product.",
+            "existing_reviews_action_text": "Write Review",
+            "allow_unverified_reviews": false,
+            "product": "{{product}}"
+          }
+        },
+        "113044fc-adef-46c2-a1d1-211cfd64c7d5": {
+          "type": "shopify:\/\/apps\/product-reviews-test\/blocks\/average-rating\/9ef4f36d-cf91-4f04-ba71-af8262278f76",
+          "disabled": true,
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 24,
+            "padding_x": 0,
+            "padding_y": 0,
+            "show_heading": false,
+            "heading": "Average Score",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "4e2b6120-7d09-4fd5-97b3-fdfd729c0c2f",
+        "113044fc-adef-46c2-a1d1-211cfd64c7d5"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "product-recommendations": {
-      "type": "product-recommendations"
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "main",
+    "1631864868fe8e26b3",
     "product-recommendations"
   ]
 }
